@@ -11,7 +11,7 @@ const Main1 = () => {
           <h1 className='text-[#18206b] text-5xl font-semibold leading-tight md:text-6xl md:leading-tight'>Landing page template for developers & startups</h1>
         <p className='text-2xl mt-8 text-[#343d8a]'>Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.</p>
         </div>
-        <div className="mt-8 text-2xl flex justify-between md:justify-start gap-5">
+        <div className="max-w-screen-sm mt-8 text-xl flex justify-between md:justify-start gap-5 md:text-2xl">
           <button className='btn shadow-xl'>Explore</button>
           <button className='bg-white py-3 px-5 shadow-lg whitespace-nowrap'>Learn more</button>
         </div>
