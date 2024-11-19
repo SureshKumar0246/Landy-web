@@ -14,7 +14,7 @@ const Navbar = () => {
   
   return (
     <>
-    <div className="flex justify-between w-[80%] mx-auto my-10">
+    <div className="flex justify-between w-[80%] mx-auto my-10 relative">
       <div className="logo">
       <h1 className='text-4xl font-bold text-[#18216d] cursor-pointer'>Landy</h1>
       </div>
@@ -47,8 +47,8 @@ const Navbar = () => {
         
       </div>
     </div>
-    {Menu && <div className= {`fixed h-full w-screen bg-black/50 right-0 top-0 backdrop-blur-sm ${Menu ? "translate-x-0 transition-translate duration-3000":"translate-x-full transition-translate duration-3000"} md:hidden `}>
-     <section className='bg-white text-black flex flex-col absolute right-0 top-0 p-8 h-screen w-56 transition-all duration-3000'>
+    {Menu && <div className= {`fixed h-full w-screen bg-black/50 z-40 right-0 top-0 backdrop-blur-sm ${Menu ? "translate-x-0 transition-translate duration-3000":"translate-x-full transition-translate duration-3000"} md:hidden `}>
+     <section className='z-50 bg-white text-black flex flex-col absolute right-0 top-0 p-8 h-screen w-56 transition-all duration-3000 '>
      <ImCross className='absolute right-3' onClick={()=>setMenu(false)}/>
      <ul className='my-16 flex flex-col gap-8 text-2xl items-center '>
           <li><a href="#" className='text-[#18216d] text-2xl hover:text-yellow-600 hover:underline-curly cursor-pointer'>About</a></li>
