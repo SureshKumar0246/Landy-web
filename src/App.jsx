@@ -13,6 +13,7 @@ function App() {
 
   return (
     <>
+    
       <BrowserRouter>
       <Routes>
       {/* <Route path="/about" element={<Main4/>}/> */}
@@ -21,7 +22,7 @@ function App() {
       <Navbar/>
       <Main1/>
        <div id="about"></div>
-      <Main2/>
+      {/* <Main2/> */}
       <div id="product"></div>
       <Main3 />
       <div id='mission'></div>
@@ -33,7 +34,7 @@ function App() {
       
       </BrowserRouter>
       
-      
+     
     </>
   )
 }

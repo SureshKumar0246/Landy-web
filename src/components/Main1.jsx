@@ -2,7 +2,7 @@ import React from 'react'
 import developer from './developer.svg'
 const Main1 = () => {
   return (
-      <div className=" w-[80%] mx-auto flex flex-col md:flex-row-reverse gap-14 my-24" data-aos="fade-left">
+      <div className=" w-[80vw] mx-auto flex flex-col md:flex-row-reverse gap-14 my-24" data-aos="fade-left">
         <div className=" flex justify-center items-center md:w-1/2">
         <img className='w-full' src={developer} alt="" />
         </div>

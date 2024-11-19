@@ -4,7 +4,7 @@ import productlaunch from './product-launch.svg'
 const Main4 = () => {
   return (
     <>
-    <div className="container max-w-[80%] mx-auto flex flex-col my-24 md:flex-row-reverse gap-14" data-aos="fade-left">
+    <div className="container max-w-[80vw] mx-auto flex flex-col my-24 md:flex-row-reverse gap-14" data-aos="fade-left">
       <div className="md:w-1/2 flex justify-center items-center">
       <img className='' src={productlaunch} alt="" />
       </div>

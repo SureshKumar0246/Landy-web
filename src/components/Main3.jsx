@@ -4,7 +4,7 @@ import notes from './notes.svg'
 const Main3 = () => {
   return (
     <>
-    <div className="w-[80%] mx-auto flex flex-col my-24 md:flex-row gap-14" data-aos="fade-right">
+    <div className="w-[80vw] mx-auto flex flex-col my-24 md:flex-row gap-14" data-aos="fade-right">
       <div className="img md:w-1/2 flex justify-center items-center">
       <img className='' src={graph} alt="" />
       </div>

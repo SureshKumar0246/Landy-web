@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <>
-    <div className="w-[80%] mx-auto flex flex-col gap-12 my-32 md:flex-row">
+    <div className="w-[80vw] mx-auto flex flex-col gap-12 my-32 md:flex-row">
       <div className="contact md:w-1/2 flex justify-center items-center" data-aos="fade-right">
       <div className="">
       <h1 className='text-[#18206b] text-5xl font-semibold leading-tight md:text-6xl md:leading-tight'>Contact form</h1>

@@ -14,7 +14,7 @@ const Navbar = () => {
   
   return (
     <>
-    <div className="flex justify-between w-[80%] mx-auto my-10 relative">
+    <div className="flex justify-between w-[80vw] mx-auto my-10 relative">
       <div className="logo">
       <h1 className='text-4xl font-bold text-[#18216d] cursor-pointer'>Landy</h1>
       </div>
@@ -42,19 +42,39 @@ const Navbar = () => {
               duration={500}><button className='btn'>Contact</button></Link></li>
         </ul>
         <div className="menuIcon text-2xl font-semibold md:hidden">
-        <FiMenu className='' onClick={()=>setMenu(true)}/>
+        <FiMenu className='cursor-pointer' onClick={()=>setMenu(true)}/>
         </div>
         
       </div>
     </div>
     {Menu && <div className= {`fixed h-full w-screen bg-black/50 z-40 right-0 top-0 backdrop-blur-sm ${Menu ? "translate-x-0 transition-translate duration-3000":"translate-x-full transition-translate duration-3000"} md:hidden `}>
      <section className='z-50 bg-white text-black flex flex-col absolute right-0 top-0 p-8 h-screen w-56 transition-all duration-3000 '>
-     <ImCross className='absolute right-3' onClick={()=>setMenu(false)}/>
+     <ImCross className='absolute right-3 cursor-pointer' onClick={()=>setMenu(false)}/>
      <ul className='my-16 flex flex-col gap-8 text-2xl items-center '>
-          <li><a href="#" className='text-[#18216d] text-2xl hover:text-yellow-600 hover:underline-curly cursor-pointer'>About</a></li>
+     <li><Link to="about" 
+            spy={true} 
+            smooth={true} 
+            offset={-80} 
+              duration={500} className='text-[#18216d] text-2xl hover:text-yellow-600 hover:underline-curly cursor-pointer'> About</Link></li>
+          <li ><Link to="mission" 
+            spy={true} 
+            smooth={true} 
+            offset={-80} 
+              duration={500} className='text-[#18216d] text-2xl hover:text-yellow-600 hover:underline-curly cursor-pointer'>Mission</Link></li>
+          <li><Link to="product" 
+            spy={true} 
+            smooth={true} 
+            offset={-50} 
+              duration={500} className='text-[#18216d] text-2xl hover:text-yellow-600 hover:underline-curly cursor-pointer'>Product</Link></li>
+          <li><Link to="contact" 
+            spy={true} 
+            smooth={true} 
+            offset={-80} 
+              duration={500}><button className='btn text-xl'>Contact</button></Link></li>
+          {/* <li><a href="#" className='text-[#18216d] text-2xl hover:text-yellow-600 hover:underline-curly cursor-pointer'>About</a></li>
           <li><a href="#" className='text-[#18216d] text-2xl hover:text-yellow-600 hover:underline-curly cursor-pointer'>Mission</a></li>
           <li><a href="#" className='text-[#18216d] text-2xl hover:text-yellow-600 hover:underline-curly cursor-pointer'>Product</a></li>
-          <li><button className='btn text-xl'>Contact</button></li>
+          <li><button className='btn text-xl'>Contact</button></li> */}
         </ul>
      </section>
     </div>

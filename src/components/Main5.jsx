@@ -4,7 +4,7 @@ import waving from './waving.svg'
 const Main5 = () => {
   return (
     <>
-    <div className="w-[80%] m-auto flex flex-col my-24 md:flex-row gap-14" data-aos="fade-right">
+    <div className="w-[80vw] m-auto flex flex-col my-24 md:flex-row gap-14" data-aos="fade-right">
       <div className="md:w-1/2 flex justify-center items-center">
             <img className='' src={waving} alt="" />
 
